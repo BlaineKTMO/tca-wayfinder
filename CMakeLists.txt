@@ -62,12 +62,14 @@ find_package(catkin REQUIRED COMPONENTS
 add_service_files(
   FILES
   GwptService.srv
+  IwptService.srv
 )
 
 # Generate actions in the 'action' folder
 add_action_files(
   FILES
   NavToGwpt.action
+  MoveBaseInterface.action
 )
 
 ## Generate added messages and services with any dependencies listed here
@@ -146,6 +148,12 @@ target_link_libraries(${PROJECT_NAME}_wayfinder ${catkin_LIBRARIES})
 
 add_executable(${PROJECT_NAME}_waypoint_driver src/WaypointDriver.cpp)
 target_link_libraries(${PROJECT_NAME}_waypoint_driver ${catkin_LIBRARIES})
+
+add_executable(${PROJECT_NAME}_pathfinder src/Pathfinder.cpp)
+target_link_libraries (${PROJECT_NAME}_pathfinder ${catkin_LIBRARIES})
+
+add_executable(${PROJECT_NAME}_test src/test.cpp)
+target_link_libraries(${PROJECT_NAME}_test ${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

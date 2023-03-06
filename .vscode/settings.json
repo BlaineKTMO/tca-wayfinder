@@ -71,6 +71,7 @@
         "valarray": "cpp",
         "variant": "cpp",
         "bit": "cpp",
-        "csignal": "cpp"
+        "csignal": "cpp",
+        "*.ipp": "cpp"
     }
 }

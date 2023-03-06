@@ -1,0 +1,7 @@
+<?xml version="1.0"?> 
+
+<launch>
+    <node name="wayfinder" pkg="tca_turtlebot" type="tca_turtlebot_wayfinder" output="screen" />
+    <node name="pathfinder" pkg="tca_turtlebot" type="tca_turtlebot_pathfinder" output="screen" />
+    <node name="waypoint_driver" pkg="tca_turtlebot" type="tca_turtlebot_waypoint_driver" output="screen" />
+</launch>
