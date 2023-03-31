@@ -49,9 +49,11 @@ qtcreator-*
 
 ~/
 .vim/
+.vscode/
+
 
 # ccls
-.ccls
+*.ccls
 .ccls-cache/
 # Catkin custom files
 CATKIN_IGNORE
