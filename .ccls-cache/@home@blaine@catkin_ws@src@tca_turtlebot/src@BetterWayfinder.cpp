@@ -76,7 +76,7 @@ class Wayfinder
    * @param goal second position
    * @return distance
    */
-        float distToWpt(geometry_msgs::Point initial_pos, geometry_msgs::Point goal 
+        float distToWpt(geometry_msgs::Point initial_pos, geometry_msgs::Point goal) 
         {
             float dx = goal.x - initial_pos.x;
             float dy = goal.y - initial_pos.y;
