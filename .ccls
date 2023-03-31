@@ -1,5 +1,0 @@
-clang
-
--I/opt/ros/noetic/include/
--I/home/blaine/catkin_ws/src/tca_turtlebot/include
--I/home/blaine/catkin_ws/devel/include
